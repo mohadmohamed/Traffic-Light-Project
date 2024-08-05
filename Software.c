@@ -43,14 +43,14 @@ void Automatic()
          if(portB == 53)  //west
          {
            portD.b0 = 0;
-           portD.b1 = 1;  //YELLOW wesr
+           portD.b1 = 1;  //YELLOW west
          }
          delay_ms(500);
          if(portB == 55) //west         //37  : 0011 0111
          {
-          i = -1;
+          i =- 1;
           count = 10;
-          portD.b5 =0;
+          portD.b5 = 0;
           portD.b1 = 0;
           portd.b3 = 1;//RED south
           portD.b2 = 1;//Green west
