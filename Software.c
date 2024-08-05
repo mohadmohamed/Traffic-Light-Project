@@ -45,7 +45,7 @@ void Automatic()
            portD.b0 = 0;
            portD.b1 = 1;  //YELLOW wesr
          }
-         delay_ms(150);
+         delay_ms(500);
          if(portB == 55) //west         //37  : 0011 0111
          {
           i = -1;
