@@ -1,6 +1,7 @@
 char count = 0;
 char key[] = {0, 16 ,32, 48};
 char i = 0;
+char j = 0;
 char flag = 0;
 char OldPortValue = 0;
 void Automatic();
@@ -97,7 +98,11 @@ void Automatic()
         portD.b1 = 1;
         //south red on :
         portD.b3 = 1;
-        delay_ms(3000);
+       for(j = 0; j < 3; j++)
+       {
+        portB = j;
+        delay_ms(1000);
+       }
         //turn off yellow west
         portD.b1 = 0;
         //west green on :
@@ -109,7 +114,11 @@ void Automatic()
         portD.b4 = 1;
        //west red on :
         portD.b0 = 1;
-        delay_ms(3000);
+        for(j = 0; j < 4; j++)
+       {
+        portB = j;
+        delay_ms(1000);
+       }
        //turn off yellow south
         portD.b4 = 0;
        //south green on :
