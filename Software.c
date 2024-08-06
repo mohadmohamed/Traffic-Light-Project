@@ -98,7 +98,7 @@ void Automatic()
         portD.b1 = 1;
         //south red on :
         portD.b3 = 1;
-       for(j = 0; j < 3; j++)
+       for(j = 0; j < 4; j++)
        {
         portB = j;
         delay_ms(1000);
