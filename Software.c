@@ -35,7 +35,11 @@ void main() {
    }
 }
 void Automatic()
-{
+{   
+     portC.b2 = 1;
+     portC.b3 = 1;
+     portC.b0 = 1;
+     portC.b1 = 1;
      for(count = 0 ; count < 10; count++)     //21  i = 2 , count = 1
      {
          portB = count + key[i];
@@ -93,7 +97,11 @@ void Automatic()
    {
      portD = 0;
      if(portA.b1 == 1)
-     {
+     {   
+        portC.b2 = 1;
+        portC.b3 = 1;
+        portC.b0 = 0;
+         portC.b1 = 0;
         //yellow west on 3 sec :
         portD.b1 = 1;
         //south red on :
@@ -110,6 +118,10 @@ void Automatic()
       }
       else  //portA.b1 == 0
       {
+        portC.b0 = 1;
+        portC.b1 = 1;
+        portC.b2 = 0;
+        portC.b3 = 0;
        //yellow south on 3 sec :
         portD.b4 = 1;
        //west red on :
