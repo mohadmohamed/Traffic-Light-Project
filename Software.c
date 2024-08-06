@@ -80,6 +80,7 @@ void Automatic()
             i = -1;
             portB = 0;
             Manual();
+            flag = 0;
             break;
          }
      }
