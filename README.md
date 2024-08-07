@@ -7,3 +7,5 @@
 
  I first used Proteus to implement the circuit then I used MikroC for writing the code through which the MicroController will operate with. 
  
+Check this Youtube link to see tbe project!!
+https://youtu.be/9FFNTmQSbAI
